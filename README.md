@@ -6,7 +6,7 @@ Uma singela calculadora para iniciar os estudos com React.js
 
 Baixar o projeto:
 ```
-git clone 
+git clone https://github.com/gastawny/calculadora.git
 ```
 Instalar as dependências:
 ```
