@@ -1,4 +1,6 @@
 .Teclado {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     height: 20rem;
     width: 18rem;
@@ -6,9 +8,10 @@
     background: rgba(0, 34, 53, 0.4);
     overflow: hidden;
     border-radius: 1rem 1rem 2rem 2rem;
+    z-index: 1;
 }
 
-.Teclado::after {
+.Teclado::before {
     content: '';
     position: absolute;
     height: 20rem;
@@ -16,5 +19,25 @@
     right: 0;
     background: linear-gradient(244.38deg, #42869B 5%, #2A7DA1 15%, #224E91 30%, #00123F 50%);
     filter: blur(4rem);
+    z-index: 0;
     transform: rotate(-15deg);
+}
+
+.Teclado .topBar {
+    display: flex;
+    height: 3.4rem;
+    z-index: 1;
+    margin: .4rem 0 0 .4rem;
+}
+
+.Teclado .numeros {
+    z-index: 1;
+    margin: .4rem 0 0 .4rem;
+    position: relative;
+}
+
+.Teclado .sideBar {
+    z-index: 1;
+    margin: .4rem 0 0 .4rem;
+    position: relative;
 }
