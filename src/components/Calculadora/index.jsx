@@ -23,19 +23,19 @@ const Calculadora = () => {
         ],
         [
             {
-                tecla: '1',
+                tecla: '7',
                 tipo: 2,
-                teclado: '1',
+                teclado: '7',
             },
             {
-                tecla: '2',
+                tecla: '8',
                 tipo: 2,
-                teclado: '2',
+                teclado: '8',
             },
             {
-                tecla: '3',
+                tecla: '9',
                 tipo: 2,
-                teclado: '3',
+                teclado: '9',
             },
             {
                 tecla: '4',
@@ -53,19 +53,19 @@ const Calculadora = () => {
                 teclado: '6',
             },
             {
-                tecla: '7',
+                tecla: '1',
                 tipo: 2,
-                teclado: '7',
+                teclado: '1',
             },
             {
-                tecla: '8',
+                tecla: '2',
                 tipo: 2,
-                teclado: '8',
+                teclado: '2',
             },
             {
-                tecla: '9',
+                tecla: '3',
                 tipo: 2,
-                teclado: '9',
+                teclado: '3',
             },
             {
                 tecla: '.',
@@ -105,9 +105,9 @@ const Calculadora = () => {
                 teclado: '+',
             },
             {
-                tecla: '=',
+                tecla: <span className='igual'>=</span>,
                 tipo: 4,
-                teclado: '=',
+                teclado: '='
             },
         ]
     ]

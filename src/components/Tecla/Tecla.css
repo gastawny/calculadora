@@ -1,6 +1,8 @@
 .Tecla {
-    width: 3.2rem;
-    height: 3.2rem;
+    position: relative;
+    width: 3.25rem;
+    margin: 0.32rem .375rem;
+    height: 3.25rem;
     border-radius: 50%;
     background-color: rgba(5, 5, 5, .4);
     border: none;
@@ -17,16 +19,20 @@
     background-color: rgba(5, 5, 5, .6);
 }
 
+.Tecla:active {
+    background-color: rgba(20, 5, 40, .5);
+}
+
 .Teclado .topBar .Tecla:nth-child(1) {
     border-radius: 50% 0 0 50%;
     margin: 0;
-    width: 3.4rem;
+    width: 3.75rem;
 }
 
 .Teclado .topBar .Tecla:nth-child(2) {
     border-radius: 0;
     margin: 0;
-    width: 3.4rem;
+    width: 3.75rem;
 }
 
 .Teclado .topBar .Tecla:nth-child(3) {
@@ -35,5 +41,45 @@
     align-items: center;
     border-radius: 0 50% 50% 0;
     margin: 0;
-    width: 3.4rem;
+    width: 3.75rem;
+}
+
+.Teclado .rightSideBar .Tecla {
+    border-radius: 0;
+    margin: 0;
+    height: 3.75rem;
+}
+
+.Teclado .rightSideBar .Tecla:first-child {
+    border-radius: 50% 50% 0 0;
+}
+
+.Teclado .rightSideBar .Tecla:last-child {
+    border-radius: 0 0 50% 50%;
+}
+
+.Teclado .rightSideBar .Tecla:last-child:hover {
+    background-color: rgba(5, 5, 5, 0.4);
+}
+
+.Teclado .rightSideBar .Tecla .igual {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.25rem;
+    width: 3.25rem;
+    background-color: rgba(5, 5, 5, .25);
+}
+
+.Teclado .rightSideBar .Tecla .igual:hover {
+    background-color: rgba(5, 5, 5, .6);
+}
+
+.Teclado .rightSideBar .Tecla .igual:active {
+    background-color: rgba(20, 5, 40, .8);
 }
