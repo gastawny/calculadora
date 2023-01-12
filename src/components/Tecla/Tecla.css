@@ -24,7 +24,7 @@
 }
 
 .Teclado .topBar .Tecla:nth-child(1) {
-    border-radius: 50% 0 0 50%;
+    border-radius: 3.25rem 0 0 3.25rem;
     margin: 0;
     width: 3.75rem;
 }
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 3.25rem 3.25rem 0;
     margin: 0;
     width: 3.75rem;
 }
@@ -51,11 +51,11 @@
 }
 
 .Teclado .rightSideBar .Tecla:first-child {
-    border-radius: 50% 50% 0 0;
+    border-radius: 3.25rem 3.25rem 0 0;
 }
 
 .Teclado .rightSideBar .Tecla:last-child {
-    border-radius: 0 0 50% 50%;
+    border-radius: 0 0 3.25rem 3.25rem;
 }
 
 .Teclado .rightSideBar .Tecla:last-child:hover {

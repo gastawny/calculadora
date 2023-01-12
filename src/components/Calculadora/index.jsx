@@ -1,6 +1,7 @@
 import './Calculadora.css'
 import Teclado from '../Teclado'
 import { ImArrowLeft2 } from 'react-icons/im'
+import Display from '../Display'
 
 const Calculadora = () => {
     const teclas = [
@@ -115,6 +116,7 @@ const Calculadora = () => {
     return (
         <div className='Calculadora'>
             <Teclado teclas={teclas} />
+            <Display />
         </div>
     )
 }

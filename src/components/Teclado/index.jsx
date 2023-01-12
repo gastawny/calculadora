@@ -7,14 +7,14 @@ const Teclado = ({ teclas }) => {
             <div className='Conteudo'>
                 <div className='leftSideBar'>
                     <div className='topBar'>
-                        {teclas[0].map(tecla => <Tecla>{tecla.tecla}</Tecla>)}
+                        {teclas[0].map((tecla, index) => <Tecla key={index}>{tecla.tecla}</Tecla>)}
                     </div>
                     <div className='numeros'>
-                        {teclas[1].map(tecla => <Tecla>{tecla.tecla}</Tecla>)}
+                        {teclas[1].map((tecla, index) => <Tecla key={index}>{tecla.tecla}</Tecla>)}
                     </div>
                 </div>
                 <div className='rightSideBar'>
-                    {teclas[2].map(tecla => <Tecla>{tecla.tecla}</Tecla>)}
+                    {teclas[2].map((tecla, index) => <Tecla key={index}>{tecla.tecla}</Tecla>)}
                 </div>
             </div>
         </div>

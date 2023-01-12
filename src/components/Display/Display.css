@@ -1,0 +1,16 @@
+.Display {
+    position: inherit;
+    height: 14rem;
+    width: 18rem;
+}
+
+.resultado {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-family: 'Poppins';
+    color: #FBFBFB;
+    font-weight: 600;
+    font-size: 2rem;
+    box-sizing: border-box;
+}

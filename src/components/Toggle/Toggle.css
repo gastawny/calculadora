@@ -1,0 +1,70 @@
+.Toggle {
+    position: relative;
+}
+
+.btn-toggle {
+    cursor: pointer;
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: #A9DCFD;
+}
+
+.slider {
+    position: absolute;
+    height: 2rem;
+    width: 3.5rem;
+    background-color: #D8EEFF;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    transition: ease-in-out 300ms;
+
+}
+
+.icons {
+    position: relative;
+}
+
+.sol {
+    position: absolute;
+    left: 0.75rem;
+    width: 2rem;
+    height: 2rem;
+    color: #373737;
+}
+
+.lua {
+    position: absolute;
+    right: 0.6rem;
+    top: .3rem;
+    width: 1.55rem;
+    height: 1.55em;
+    color: rgba(55, 55, 55, 0.4);
+    transform: rotate(-45deg);
+}
+
+.checkbox-toggle {
+    display: none;
+}
+
+
+.checkbox-toggle:checked~.btn-toggle {
+    background-color: #1B6A9C;
+}
+
+
+.checkbox-toggle:checked~.btn-toggle>.icons>.sol {
+    left: .4rem;
+    color: rgba(251, 251, 251, 0.4);
+}
+
+.checkbox-toggle:checked~.btn-toggle>.slider {
+    left: 2.5rem;
+    background-color: #003661;
+}
+
+.checkbox-toggle:checked~.btn-toggle>.icons>.lua {
+    right: .9525rem;
+    color: rgba(251, 251, 251, 0.8);
+}
