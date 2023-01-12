@@ -4,23 +4,36 @@
     margin: 0.32rem .375rem;
     height: 3.25rem;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
     border: none;
     cursor: pointer;
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.6rem;
-    color: #373737;
     box-sizing: border-box;
     transition: ease-in-out 100ms;
+    background: rgba(255, 255, 255, 0.4);
+    color: #373737;
+}
+
+.Tecla.Dark {
+    color: #FBFBFB;
+    background: rgba(5, 5, 5, .4);
 }
 
 .Tecla:hover {
     background: rgba(255, 255, 255, 0.7);
 }
 
+.Tecla.Dark:hover {
+    background: rgba(5, 5, 5, .6);
+}
+
 .Tecla:active {
     background: rgba(120, 120, 255, 0.5);
+}
+
+.Tecla.Dark:active {
+    background: rgba(20, 5, 40, .5);
 }
 
 .Teclado .topBar .Tecla:nth-child(1) {
@@ -62,7 +75,12 @@
     background: rgba(255, 255, 255, 0.4);
 }
 
+.Teclado .rightSideBar .Tecla.Dark:last-child:hover {
+    background: rgba(5, 5, 5, .4);
+}
+
 .Teclado .rightSideBar .Tecla .igual {
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -77,10 +95,25 @@
     background: rgba(255, 255, 255, 0.4);
 }
 
+.Teclado .rightSideBar .Tecla.Dark .igual {
+    color: #FBFBFB;
+    background: rgba(5, 5, 5, .25);
+}
+
+
 .Teclado .rightSideBar .Tecla .igual:hover {
     background: rgba(255, 255, 255, 0.9);
 }
 
+.Teclado .rightSideBar .Tecla.Dark .igual:hover {
+    background: rgba(5, 5, 5, .6);
+}
+
 .Teclado .rightSideBar .Tecla .igual:active {
     background: rgba(120, 120, 255, 0.5);
+}
+
+
+.Teclado .rightSideBar .Tecla.Dark .igual:active {
+    background: rgba(20, 5, 40, .8);
 }

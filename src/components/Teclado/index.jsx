@@ -1,9 +1,12 @@
 import Tecla from '../Tecla'
 import './Teclado.css'
+import { useContext } from 'react'
+import { ThemeContext } from '../../contexts/theme-context'
 
 const Teclado = ({ teclas }) => {
+    const { theme } = useContext(ThemeContext)
     return (
-        <div className='Teclado'>
+        <div className={`Teclado ${theme}`}>
             <div className='Conteudo'>
                 <div className='leftSideBar'>
                     <div className='topBar'>

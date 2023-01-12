@@ -2,6 +2,11 @@
     position: inherit;
     height: 14rem;
     width: 18rem;
+    color: #373737;
+}
+
+.Display.Dark {
+    color: #FBFBFB;
 }
 
 .toggle {
@@ -21,6 +26,7 @@
     height: 1.5rem;
     box-sizing: border-box;
     border-radius: 50%;
+    color: inherit;
 }
 
 .history {
@@ -29,7 +35,7 @@
     top: 0;
     width: 1.5rem;
     height: 1.5rem;
-    color: #373737;
+    color: inherit;
 }
 
 .expressao {
@@ -43,7 +49,8 @@
     font-family: 'Poppins';
     font-size: 1.1rem;
     letter-spacing: .2rem;
-    color: #37373780;
+    color: inherit;
+    opacity: 70%;
     font-weight: 500;
     background-color: transparent;
     border: none;
@@ -59,7 +66,7 @@
     bottom: 2.5rem;
     left: 2rem;
     font-family: 'Poppins';
-    color: #373737;
+    color: inherit;
     font-weight: 600;
     font-size: 1.3rem;
     cursor: alias;
@@ -70,7 +77,7 @@
     right: 1rem;
     bottom: 2.5rem;
     font-family: 'Poppins';
-    color: #373737;
+    color: inherit;
     font-weight: 600;
     font-size: 2rem;
     box-sizing: border-box;

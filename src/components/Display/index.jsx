@@ -1,10 +1,13 @@
 import './Display.css'
 import Toggle from '../Toggle'
 import { AiOutlineHistory } from 'react-icons/ai'
+import { useContext } from 'react'
+import { ThemeContext } from '../../contexts/theme-context'
 
 const Display = () => {
+    const { theme } = useContext(ThemeContext)
     return (
-        <div className='Display'>
+        <div className={`Display ${theme}`}>
             <div className='toggle'><Toggle /></div>
             <button className='btn-history'>
                 <AiOutlineHistory className='history' />

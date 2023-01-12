@@ -1,9 +1,11 @@
 import './Tecla.css'
-import { ImArrowLeft2 } from 'react-icons/im'
+import { useContext } from 'react'
+import { ThemeContext } from '../../contexts/theme-context'
 
 const Tecla = ({ children }) => {
+    const { theme } = useContext(ThemeContext)
     return (
-        <button className='Tecla'>{children}</button>
+        <button className={`Tecla ${theme}`}>{children}</button>
     )
 }
 

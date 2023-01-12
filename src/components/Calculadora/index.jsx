@@ -2,6 +2,8 @@ import './Calculadora.css'
 import Teclado from '../Teclado'
 import { ImArrowLeft2 } from 'react-icons/im'
 import Display from '../Display'
+import { useState } from 'react'
+import { ThemeContext } from '../../contexts/theme-context'
 
 const Calculadora = () => {
     const teclas = [
@@ -112,11 +114,18 @@ const Calculadora = () => {
             },
         ]
     ]
+    const [theme, setTheme] = useState(false)
+
+    function changeTheme(theme) {
+        setTheme(theme === 'Dark' ? 'Light' : 'Dark');
+    }
 
     return (
-        <div className='Calculadora'>
-            <Teclado teclas={teclas} />
-            <Display />
+        <div className={`Calculadora ${theme}`}>
+            <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
+                <Teclado teclas={teclas} />
+                <Display />
+            </ThemeContext.Provider>
         </div>
     )
 }
