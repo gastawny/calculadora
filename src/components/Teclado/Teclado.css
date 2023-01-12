@@ -4,7 +4,7 @@
     height: 20rem;
     width: 18rem;
     bottom: 0;
-    background: rgba(0, 34, 53, 0.4);
+    background: rgba(230, 246, 255, .4);
     overflow: hidden;
     border-radius: 1rem 1rem 2rem 2rem;
 }
@@ -15,7 +15,7 @@
     height: 20rem;
     width: 20rem;
     right: 0;
-    background: linear-gradient(244.38deg, #42869B 5%, #2A7DA1 15%, #224E91 30%, #00123F 50%);
+    background: linear-gradient(244.38deg, #9EE8FF 8.14%, #5ACEFF 27.9%, #79AFFF 56.94%, #2D5FDE 84.11%);
     filter: blur(4rem);
     z-index: 0;
     transform: rotate(-15deg);
