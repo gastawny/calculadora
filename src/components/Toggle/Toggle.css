@@ -1,4 +1,6 @@
 .Toggle {
+    width: 6rem;
+    /* margin: 0 auto; */
     position: relative;
 }
 
@@ -19,7 +21,6 @@
     box-sizing: border-box;
     border-radius: 2rem;
     transition: ease-in-out 300ms;
-
 }
 
 .icons {

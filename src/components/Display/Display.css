@@ -4,13 +4,84 @@
     width: 18rem;
 }
 
+.toggle {
+    width: 6rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.btn-history {
+    position: absolute;
+    right: 1rem;
+    top: .25rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.history {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #FBFBFB;
+}
+
+.expressao {
+    position: absolute;
+    bottom: 5.2rem;
+    right: 1rem;
+    padding: 0;
+    height: 1.1rem;
+    width: 15rem;
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: #FBFBFB80;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    cursor: alias;
+}
+
+.expressao:focus {
+    outline: none;
+}
+
+.igual {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2rem;
+    font-family: 'Poppins';
+    color: #FBFBFB;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: alias;
+}
+
 .resultado {
     position: absolute;
     right: 1rem;
-    bottom: 1rem;
+    bottom: 2.5rem;
     font-family: 'Poppins';
     color: #FBFBFB;
     font-weight: 600;
     font-size: 2rem;
     box-sizing: border-box;
+    background-color: transparent;
+    width: 8rem;
+    border: none;
+    text-align: right;
+    height: 2rem;
+    cursor: alias;
+}
+
+.resultado:focus {
+    outline: none;
 }
