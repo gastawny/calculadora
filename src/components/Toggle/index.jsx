@@ -8,7 +8,7 @@ const Toggle = () => {
     const theme = useContext(ThemeContext)
     return (
         <div className='Toggle'>
-            <label >
+            <label>
                 <input type="checkbox" className='checkbox-toggle' onChange={() => theme.changeTheme(theme.theme)} />
                 <div className='btn-toggle'>
                     <span className='slider'></span>

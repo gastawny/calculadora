@@ -38,6 +38,10 @@
     color: inherit;
 }
 
+.history:hover {
+    color: #0573bd;
+}
+
 .expressao {
     position: absolute;
     bottom: 5.2rem;

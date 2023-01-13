@@ -13,6 +13,14 @@
     background-color: #A9DCFD;
 }
 
+.btn-toggle:hover {
+    background-color: #7ebde7;
+}
+
+.btn-toggle:hover .slider {
+    background-color: #a2c1d8;
+}
+
 .slider {
     position: absolute;
     height: 2rem;
@@ -54,6 +62,9 @@
     background-color: #1B6A9C;
 }
 
+.checkbox-toggle:checked~.btn-toggle:hover {
+    background-color: #3193cf;
+}
 
 .checkbox-toggle:checked~.btn-toggle>.icons>.sol {
     left: .4rem;
@@ -63,6 +74,11 @@
 .checkbox-toggle:checked~.btn-toggle>.slider {
     left: 2.5rem;
     background-color: #003661;
+}
+
+.checkbox-toggle:checked~.btn-toggle:hover>.slider {
+    left: 2.5rem;
+    background-color: #035599;
 }
 
 .checkbox-toggle:checked~.btn-toggle>.icons>.lua {
