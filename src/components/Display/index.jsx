@@ -8,6 +8,8 @@ import { InputContext } from '../../contexts/input-context'
 const Display = () => {
     const { theme } = useContext(ThemeContext)
     const { input } = useContext(InputContext)
+    const { result } = useContext(InputContext)
+
     return (
         <div className={`Display ${theme}`}>
             <div className='toggle'><Toggle /></div>
@@ -16,7 +18,7 @@ const Display = () => {
             </button>
             <input readOnly type="text" className='expressao' value={input} />
             <h1 className='igual'>=</h1>
-            <input readOnly type="text" className='resultado' value={4002} />
+            <input readOnly type="text" className='resultado' value={result} />
         </div>
     )
 }
