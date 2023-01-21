@@ -1,12 +1,10 @@
-import './Calculadora.css'
+import './Calculadora.scss'
 import Teclado from '../Teclado'
-import { ImArrowLeft2 } from 'react-icons/im'
 import Display from '../Display'
 import { useCallback, useEffect, useState } from 'react'
 import { ThemeContext } from '../../contexts/theme-context'
 import { InputContext } from '../../contexts/input-context'
-import { calcular } from '../../funcoes.js'
-import teclas from '../../teclas.js'
+import teclas from './teclas.js'
 
 const Calculadora = () => {
     const [theme, setTheme] = useState(false)
@@ -25,6 +23,12 @@ const Calculadora = () => {
                 setInput(input + e.key)
         }))
     })
+
+    const calcular = expressao => {
+        expressao = expressao.replaceAll('÷', '/')
+        expressao = expressao.replaceAll('x', '*')
+        return eval(expressao)
+    }
 
     function changeTheme(theme) {
         setTheme(theme === 'Dark' ? 'Light' : 'Dark');

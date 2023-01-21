@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
-import './App.css';
+import './styles/App.scss';
 import Calculadora from './components/Calculadora'
 
 function App() {

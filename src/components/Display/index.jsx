@@ -1,4 +1,4 @@
-import './Display.css'
+import './Display.scss'
 import Toggle from '../Toggle'
 import { AiOutlineHistory } from 'react-icons/ai'
 import { useContext } from 'react'

@@ -1,0 +1,60 @@
+@import "../../styles/variaveis";
+
+.Teclado {
+    display: flex;
+    position: absolute;
+    height: 20rem;
+    width: 18rem;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 1rem 1rem 2rem 2rem;
+    background: rgba($bgDisplay-3-light, .4);
+
+    &.Dark {
+        background: rgba($bgDisplay-3-dark, .4);
+
+        &::before {
+            background: linear-gradient(244.38deg, $bgTeclado-1-dark 5%, $bgTeclado-2-dark 15%, $bgTeclado-3-dark 30%, $bgTeclado-4-dark 50%);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 20rem;
+        width: 20rem;
+        right: 0;
+        filter: blur(4rem);
+        z-index: 0;
+        transform: rotate(-15deg);
+        background: linear-gradient(244.38deg, $bgTeclado-1-light 8.14%, $bgTeclado-2-light 27.9%, $bgTeclado-3-light 56.94%, $bgTeclado-4-light 84.11%);
+    }
+}
+
+.Conteudo {
+    z-index: 1;
+    position: relative;
+    width: 18rem;
+
+    .leftSideBar {
+        position: absolute;
+        left: 1rem;
+        top: .6rem;
+        width: 12rem;
+        margin: 0;
+
+        .topBar {
+            display: flex;
+            margin-left: .375rem;
+            margin-bottom: .32rem;
+        }
+    }
+
+    .rightSideBar {
+        position: absolute;
+        right: 1.375rem;
+        top: .6rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

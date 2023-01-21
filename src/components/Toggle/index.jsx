@@ -1,4 +1,4 @@
-import './Toggle.css'
+import './Toggle.scss'
 import { WiDaySunny } from 'react-icons/wi'
 import { MdOutlineNightlight } from 'react-icons/md'
 import { useContext } from 'react'

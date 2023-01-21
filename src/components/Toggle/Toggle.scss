@@ -1,0 +1,89 @@
+@import "../../styles/variaveis";
+
+.Toggle {
+    width: 6rem;
+    position: relative;
+}
+
+.checkbox-toggle {
+    display: none;
+
+    &:checked~.btn-toggle {
+        background-color: $bgTeclado-1-dark;
+
+        &:hover {
+            background-color: $bgTeclado-2-dark;
+
+            .slider {
+                left: 2.5rem;
+                background-color: $bgTeclado-3-dark;
+            }
+        }
+
+        .icons {
+            .sol {
+                left: .4rem;
+                color: rgba($tecla-light, 0.4);
+            }
+
+            .lua {
+                right: .9525rem;
+                color: rgba($tecla-light, 0.8);
+            }
+        }
+
+        .slider {
+            left: 2.5rem;
+            background-color: rgba($bgTeclado-4-dark, .8);
+        }
+    }
+}
+
+.btn-toggle {
+    cursor: pointer;
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: $bgTeclado-1-light;
+
+    &:hover {
+        background-color: $bgTeclado-2-light;
+
+        .slider {
+            background-color: rgba($bgTeclado-4-light, .6);
+        }
+    }
+}
+
+.slider {
+    position: absolute;
+    height: 2rem;
+    width: 3.5rem;
+    background-color: $bgTeclado-3-light;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    transition: ease-in-out 300ms;
+}
+
+.icons {
+    position: relative;
+
+    .sol {
+        position: absolute;
+        left: 0.75rem;
+        width: 2rem;
+        height: 2rem;
+        color: $fonte-light;
+    }
+
+    .lua {
+        position: absolute;
+        right: 0.6rem;
+        top: .3rem;
+        width: 1.55rem;
+        height: 1.55em;
+        color: rgba($fonte-light, 0.4);
+        transform: rotate(-45deg);
+    }
+}

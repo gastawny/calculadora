@@ -1,5 +1,5 @@
 import Tecla from '../Tecla'
-import './Teclado.css'
+import './Teclado.scss'
 import { useContext } from 'react'
 import { ThemeContext } from '../../contexts/theme-context'
 
