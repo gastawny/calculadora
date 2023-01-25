@@ -1,19 +1,30 @@
 @import "../../styles/variaveis";
 
 .Display {
-    position: inherit;
-    height: 14rem;
-    width: 18rem;
-    color: $fonte-light;
-    font-family: $fonte;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+
+    background: linear-gradient(166.34deg, $bgDisplay-1-light 0%, $bgDisplay-2-light 22.9%, $bgDisplay-3-light 100%);
 
     &.Dark {
         color: $fonte-dark;
+        background: linear-gradient(166.34deg, $bgDisplay-1-dark 0%, $bgDisplay-2-dark 22.9%, $bgDisplay-3-dark 100%);
 
-        .history:hover {
+        .container .histor:hover {
             color: $azul;
         }
     }
+}
+
+.container {
+    position: relative;
+    height: 14rem;
+    width: 18rem;
+    font-family: $fonte;
+    z-index: 2000;
+
 }
 
 .toggle {

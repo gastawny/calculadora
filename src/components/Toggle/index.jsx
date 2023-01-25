@@ -1,15 +1,15 @@
 import './Toggle.scss'
 import { WiDaySunny } from 'react-icons/wi'
 import { MdOutlineNightlight } from 'react-icons/md'
-import { useContext } from 'react'
-import { ThemeContext } from '../../contexts/theme-context'
+import { useThemeContext } from '../../contexts/Theme'
 
 const Toggle = () => {
-    const theme = useContext(ThemeContext)
+    const { changeTheme } = useThemeContext()
+
     return (
         <div className='Toggle'>
             <label>
-                <input type="checkbox" className='checkbox-toggle' onChange={() => theme.changeTheme(theme.theme)} />
+                <input type="checkbox" className='checkbox-toggle' onChange={() => changeTheme()} />
                 <div className='btn-toggle'>
                     <span className='slider'></span>
                     <div className='icons'>

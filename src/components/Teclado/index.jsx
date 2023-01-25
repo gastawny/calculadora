@@ -1,10 +1,9 @@
 import Tecla from '../Tecla'
 import './Teclado.scss'
-import { useContext } from 'react'
-import { ThemeContext } from '../../contexts/theme-context'
+import { useThemeContext } from '../../contexts/Theme'
 
 const Teclado = ({ teclas }) => {
-    const { theme } = useContext(ThemeContext)
+    const { theme } = useThemeContext()
 
     return (
         <div className={`Teclado ${theme}`}>

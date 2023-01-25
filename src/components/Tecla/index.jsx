@@ -1,10 +1,10 @@
 import './Tecla.scss'
-import { useContext, useState } from 'react'
-import { ThemeContext } from '../../contexts/theme-context'
-import { InputContext } from '../../contexts/input-context'
+import { useContext } from 'react'
+import { useThemeContext } from '../../contexts/Theme'
+import { InputContext } from '../../contexts/Input'
 
 const Tecla = ({ children }) => {
-    const { theme } = useContext(ThemeContext)
+    const { theme } = useThemeContext()
     const { changeInput } = useContext(InputContext)
 
     return (

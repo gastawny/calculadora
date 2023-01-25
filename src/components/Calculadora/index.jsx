@@ -2,12 +2,13 @@ import './Calculadora.scss'
 import Teclado from '../Teclado'
 import Display from '../Display'
 import { useCallback, useEffect, useState } from 'react'
-import { ThemeContext } from '../../contexts/theme-context'
-import { InputContext } from '../../contexts/input-context'
+import { InputContext } from '../../contexts/Input'
 import teclas from './teclas.js'
+import { ThemeProvider } from '../../contexts/Theme'
+import { useThemeContext } from '../../contexts/Theme'
 
 const Calculadora = () => {
-    const [theme, setTheme] = useState(false)
+    const { theme } = useThemeContext()
     const [input, setInput] = useState('')
     const [result, setResult] = useState('')
 
@@ -28,10 +29,6 @@ const Calculadora = () => {
         expressao = expressao.replaceAll('÷', '/')
         expressao = expressao.replaceAll('x', '*')
         return eval(expressao)
-    }
-
-    function changeTheme(theme) {
-        setTheme(theme === 'Dark' ? 'Light' : 'Dark');
     }
 
     useEffect(() => {
@@ -57,13 +54,13 @@ const Calculadora = () => {
     }
 
     return (
-        <div className={`Calculadora ${theme}`}>
-            <ThemeContext.Provider value={{ theme: theme, changeTheme: changeTheme }}>
-                <InputContext.Provider value={{ input: input, changeInput: changeInput, result: result }}>
-                    <Teclado teclas={teclas} />
+        <div className={`Calculadora`}>
+            <ThemeProvider>
+                <InputContext.Provider value={{ input, changeInput, result }}>
                     <Display />
+                    <Teclado teclas={teclas} />
                 </InputContext.Provider>
-            </ThemeContext.Provider>
+            </ThemeProvider>
         </div>
     )
 }

@@ -5,9 +5,4 @@
     width: 18rem;
     border-radius: 2rem;
     position: relative;
-    background: linear-gradient(166.34deg, $bgDisplay-1-light 0%, $bgDisplay-2-light 22.9%, $bgDisplay-3-light 100%);
-
-    &.Dark {
-        background: linear-gradient(166.34deg, $bgDisplay-1-dark 0%, $bgDisplay-2-dark 22.9%, $bgDisplay-3-dark 100%);
-    }
 }
