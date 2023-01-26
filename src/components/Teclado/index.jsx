@@ -1,9 +1,19 @@
 import Tecla from '../Tecla'
 import './Teclado.scss'
 import { useThemeContext } from '../../contexts/Theme'
+import { useEffect } from 'react'
+import { useExpressaoContext } from '../../contexts/Expressao'
 
 const Teclado = ({ teclas }) => {
     const { theme } = useThemeContext()
+    const { inputTeclado } = useExpressaoContext()
+
+    useEffect(() => {
+        window.addEventListener('keydown', inputTeclado)
+        return () => {
+            window.removeEventListener("keydown", inputTeclado);
+        }
+    }, [inputTeclado])
 
     return (
         <div className={`Teclado ${theme}`}>

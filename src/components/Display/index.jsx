@@ -1,14 +1,12 @@
 import './Display.scss'
 import Toggle from '../Toggle'
 import { AiOutlineHistory } from 'react-icons/ai'
-import { useContext } from 'react'
 import { useThemeContext } from '../../contexts/Theme'
-import { InputContext } from '../../contexts/Input'
+import { useExpressaoContext } from '../../contexts/Expressao'
 
 const Display = () => {
     const { theme } = useThemeContext()
-    const { input } = useContext(InputContext)
-    const { result } = useContext(InputContext)
+    const { input, result } = useExpressaoContext()
 
     return (
         <div className={`Display ${theme}`}>

@@ -1,17 +1,18 @@
 import './Tecla.scss'
-import { useContext } from 'react'
 import { useThemeContext } from '../../contexts/Theme'
-import { InputContext } from '../../contexts/Input'
+import { useExpressaoContext } from '../../contexts/Expressao'
 
 const Tecla = ({ children }) => {
     const { theme } = useThemeContext()
-    const { changeInput } = useContext(InputContext)
+    const { changeInput } = useExpressaoContext()
 
     return (
         <button
             onClick={() => changeInput(children)}
             className={`Tecla ${theme}`}
-        >{children}</button >
+        >
+            {children}
+        </button>
     )
 }
 
