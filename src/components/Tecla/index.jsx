@@ -4,11 +4,11 @@ import { useExpressaoContext } from '../../contexts/Expressao'
 
 const Tecla = ({ children }) => {
     const { theme } = useThemeContext()
-    const { changeInput } = useExpressaoContext()
+    const { InputTecla } = useExpressaoContext()
 
     return (
         <button
-            onClick={() => changeInput(children)}
+            onClick={() => InputTecla(children)}
             className={`Tecla ${theme}`}
         >
             {children}

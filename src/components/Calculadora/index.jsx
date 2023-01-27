@@ -1,7 +1,7 @@
 import './Calculadora.scss'
 import Teclado from '../Teclado'
 import Display from '../Display'
-import teclas from './teclas.js'
+import { teclas } from './teclas.js'
 import { ThemeProvider } from '../../contexts/Theme'
 import { ExpressaoProvider } from '../../contexts/Expressao'
 
